@@ -1,11 +1,21 @@
 import React, { useContext, useState, useEffect } from "react";
 
+//getting local storage to preserve the values between the refresh
+const getLocalStorage = () => {
+	let list = localStorage.getItem("watchList");
+	if (list) {
+		return JSON.parse(localStorage.getItem("watchList"));
+	} else {
+		return [];
+	}
+};
+
 const AppContext = React.createContext();
 
 export const Provider = ({ children }) => {
 	const [individualMovieData, setIndividualMovieData] = useState([]);
 	const [hiddenList, setHiddenList] = useState([]);
-	const [watchList, setWatchList] = useState([]);
+	const [watchList, setWatchList] = useState(getLocalStorage());
 
 	//when a user clciks on a movie he/she is taken to individual movie page and this function gets data to be rendered on that page
 	const getIndividualMovieData = (id, wholeData) => {
@@ -19,6 +29,11 @@ export const Provider = ({ children }) => {
 		let uniqueMoviesInWatchList = Array.from(new Set(allMoviesInWatchList));
 		setWatchList(uniqueMoviesInWatchList);
 	};
+
+	//setting the values in local storage every time watch list changes
+	useEffect(() => {
+		localStorage.setItem("watchList", JSON.stringify(watchList));
+	}, [watchList]);
 
 	//when user removes movie from watchlist
 	const removeFromWatchList = (id) => {

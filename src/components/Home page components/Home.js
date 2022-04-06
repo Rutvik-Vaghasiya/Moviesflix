@@ -41,6 +41,8 @@ const Home = () => {
 
 	return (
 		<article className='movie-container'>
+			{state.loading && <h1 className='loading'>Loading...</h1>}
+			{state.error && <h1 className='error'>Error...</h1>}
 			<Movies details={state.data} />
 		</article>
 	);

@@ -27,6 +27,11 @@
    }
 }
 
+.loading,.error{
+   color: $nav-text-clr;
+   height: 5rem;
+}
+
 .empty-watchlist{
    color: $nav-text-clr;
    margin: auto;
