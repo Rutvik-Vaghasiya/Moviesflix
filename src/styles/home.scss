@@ -1,0 +1,28 @@
+.movie-container{
+   display: grid;
+   place-items: center;
+   grid-template-columns: repeat(4, auto);
+   gap: 4rem 0;
+   margin: 2rem 0;
+}
+
+.movie{
+   background-color: $nav-text-hover-bg;
+   padding: 0.5rem 2rem;
+   border-radius: $radius;
+   color: $nav-text-clr;
+}
+
+.name-rating{
+   display: flex;
+   justify-content: space-between;
+   padding:  0.5rem;
+}
+
+.add-btn{
+   background-color: $nice-blue;
+
+   &:hover{
+      background-color: $add-btn-hover;
+   }
+}

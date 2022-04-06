@@ -1,0 +1,52 @@
+.navigation{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 4rem;
+   padding: 0 2rem;
+   min-width: 100%;
+   background-color: $navigation-bar-clr;
+}
+
+ul{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      
+      width: 100%;
+      
+      
+      li {
+         padding: 0.75rem 1.5rem;
+         color: $nav-text-clr;
+         font-weight: 600;
+         border-radius: $radius;
+
+         &:hover{
+            background-color: $nav-text-hover-bg;
+         }
+      }
+}
+
+
+.searchbar {
+   outline: none;
+   width: 100%;
+   height: 2.2rem;
+   padding: 0.5rem;
+   border-radius: $radius;
+   border: 1px solid $nav-text-hover-bg;
+   transition: border 400ms;
+
+   &:hover {
+      border: 2px solid $nav-text-hover-bg;
+   }
+
+   &:focus {
+      border: 2px solid $nice-blue;
+   }
+}
+
+::placeholder {
+   font-size: 1rem;
+}
