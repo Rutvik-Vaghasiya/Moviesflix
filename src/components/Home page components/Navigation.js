@@ -1,6 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useGlobalContext } from "../Functions/context";
 
 const Navigation = () => {
+	const { numWatchList } = useGlobalContext();
+
 	return (
 		<nav className='navigation'>
 			<ul>
@@ -11,12 +15,14 @@ const Navigation = () => {
 				/>
 			</ul>
 			<ul>
-				<a href=''>
-					<li>WatchList</li>
-				</a>
-				<a href=''>
+				<Link to='/watch-list'>
+					<li>
+						{numWatchList > 0 ? `WatchList (${numWatchList})` : "WatchList"}
+					</li>
+				</Link>
+				<Link to='/hidden-list'>
 					<li>Hidden</li>
-				</a>
+				</Link>
 			</ul>
 		</nav>
 	);

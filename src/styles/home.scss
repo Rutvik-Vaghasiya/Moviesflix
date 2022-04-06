@@ -3,7 +3,7 @@
    place-items: center;
    grid-template-columns: repeat(4, auto);
    gap: 4rem 0;
-   margin: 2rem 0;
+   margin: 6rem 0 2rem;
 }
 
 .movie{
@@ -24,5 +24,15 @@
 
    &:hover{
       background-color: $add-btn-hover;
+   }
+}
+
+.empty-watchlist{
+   color: $nav-text-clr;
+   margin: auto;
+   width: 70% ;
+
+   p{
+      margin: 2rem 0;
    }
 }
