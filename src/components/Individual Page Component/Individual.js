@@ -15,7 +15,6 @@ const Individual = () => {
 				<span>Rating: {rating.average}</span>
 				<span>Premiered on: {premiered}</span>
 				<p>{summary}</p>
-				<button>Hide</button>
 				<button
 					onClick={() => getMovieAddedToWatchList(id, [individualMovieData])}
 					className='add-btn'

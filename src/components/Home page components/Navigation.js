@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../Functions/context";
 
 const Navigation = () => {
-	const { numWatchList } = useGlobalContext();
+	const { numWatchList, numHiddenData } = useGlobalContext();
 
 	return (
 		<nav className='navigation'>
@@ -21,7 +21,7 @@ const Navigation = () => {
 					</li>
 				</Link>
 				<Link to='/hidden-list'>
-					<li>Hidden</li>
+					<li>{numHiddenData > 0 ? `Hidden (${numHiddenData})` : "Hidden"}</li>
 				</Link>
 			</ul>
 		</nav>

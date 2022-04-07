@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../Functions/context";
 
-const Movies = ({ details }) => {
+const Movies = ({ details, hideData }) => {
 	const { getIndividualMovieData, getMovieAddedToWatchList } =
 		useGlobalContext();
 
@@ -24,7 +24,9 @@ const Movies = ({ details }) => {
 								{rating.average}
 							</p>
 						</Link>
-						<button className='hide-btn'>Hide</button>
+						<button onClick={() => hideData(id)} className='hide-btn'>
+							Hide
+						</button>
 						<button
 							onClick={() => getMovieAddedToWatchList(id, details)}
 							className='add-btn'

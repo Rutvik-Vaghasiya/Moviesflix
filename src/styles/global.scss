@@ -41,6 +41,8 @@ footer {
    background-color: $navigation-bar-clr;
    color: $nav-text-clr;
    padding: 2rem 1rem;
+   position: relative;
+   top: 3.87vh;
 
    p {
       max-width: 60%;

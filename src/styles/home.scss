@@ -2,21 +2,26 @@
    display: grid;
    place-items: center;
    grid-template-columns: repeat(4, auto);
-   gap: 4rem 0;
+   gap: 3rem 0;
    margin: 6rem 0 2rem;
 }
 
 .movie{
    background-color: $nav-text-hover-bg;
-   padding: 0.5rem 2rem;
+   padding: 1rem;
    border-radius: $radius;
    color: $nav-text-clr;
+   transition: transform 300ms;
+      
+   &:hover {
+      transform: scale(1.05);
+   }
 }
 
 .name-rating{
    display: flex;
    justify-content: space-between;
-   padding:  0.5rem;
+   padding: 0.65rem 0.25rem;
 }
 
 .add-btn{
@@ -34,8 +39,12 @@
 
 .empty-watchlist{
    color: $nav-text-clr;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin: auto;
    width: 70% ;
+   height: 60.8vh;
 
    p{
       margin: 2rem 0;

@@ -38,8 +38,10 @@ const WatchList = () => {
 				})
 			) : (
 				<section className='empty-watchlist'>
-					<p>NO MOVIES ADDED IN YOUR WATCHLIST...</p>
-					<button onClick={() => navigate("/")}>Back to Home</button>
+					<div>
+						<p>NO MOVIES ADDED IN YOUR WATCHLIST...</p>
+						<button onClick={() => navigate("/")}>Back to Home</button>
+					</div>
 				</section>
 			)}
 		</section>
