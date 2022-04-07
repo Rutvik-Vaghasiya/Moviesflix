@@ -1,9 +1,23 @@
+.heading{
+   color: $nav-text-clr;
+   margin: 6rem auto 4rem;
+   width: max-content;
+   text-align: center;
+   position: relative;
+
+   &::after{
+      content: '';
+      position: absolute;
+      inset: 2.5rem 0 0 0;
+      background-color: $nav-text-hover-bg;
+   }
+}
+
 .movie-container{
    display: grid;
    place-items: center;
    grid-template-columns: repeat(4, auto);
    gap: 3rem 0;
-   margin: 6rem 0 2rem;
 }
 
 .movie{
