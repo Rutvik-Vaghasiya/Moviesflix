@@ -1,67 +1,68 @@
-.heading{
-   color: $nav-text-clr;
-   margin: 6rem auto 4rem;
-   width: max-content;
-   text-align: center;
-   position: relative;
+.heading {
+	color: $nav-text-clr;
+	margin: 6rem auto 4rem;
+	width: max-content;
+	text-align: center;
+	position: relative;
 
-   &::after{
-      content: '';
-      position: absolute;
-      inset: 2.5rem 0 0 0;
-      background-color: $nav-text-hover-bg;
-   }
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 2.5rem 0 0 0;
+		background-color: $nav-text-hover-bg;
+	}
 }
 
-.movie-container{
-   display: grid;
-   place-items: center;
-   grid-template-columns: repeat(4, auto);
-   gap: 3rem 0;
-   margin: 6rem 0 0
+.movie-container {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(4, auto);
+	gap: 3rem 0;
+	margin: 6rem 0 0;
 }
 
-.movie{
-   background-color: $nav-text-hover-bg;
-   padding: 1rem;
-   border-radius: $radius;
-   color: $nav-text-clr;
-   transition: transform 300ms;
-      
-   &:hover {
-      transform: scale(1.05);
-   }
+.movie {
+	background-color: $nav-text-hover-bg;
+	padding: 1rem;
+	border-radius: $radius;
+	color: $nav-text-clr;
+	transition: transform 300ms;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
-.name-rating{
-   display: flex;
-   justify-content: space-between;
-   padding: 0.65rem 0.25rem;
+.name-rating {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.65rem 0.25rem;
 }
 
-.add-btn{
-   background-color: $nice-blue;
+.add-btn {
+	background-color: $nice-blue;
 
-   &:hover{
-      background-color: $add-btn-hover;
-   }
+	&:hover {
+		background-color: $add-btn-hover;
+	}
 }
 
-.loading,.error{
-   color: $nav-text-clr;
-   height: 5rem;
+.loading,
+.error {
+	color: $nav-text-clr;
+	height: 5rem;
 }
 
-.empty-watchlist{
-   color: $nav-text-clr;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
-   width: 70% ;
-   height: 60.8vh;
+.empty-watchlist {
+	color: $nav-text-clr;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 70%;
+	height: 60.8vh;
 
-   p{
-      margin: 2rem 0;
-   }
+	p {
+		margin: 2rem 0;
+	}
 }

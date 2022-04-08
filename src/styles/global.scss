@@ -1,52 +1,52 @@
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-      background-color: $primary-clr;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	background-color: $primary-clr;
 }
 
 a {
-   color: $nav-text-clr;
-   display: block;
-   text-transform: capitalize;
-   text-decoration: none;
-   cursor: pointer;
+	color: $nav-text-clr;
+	display: block;
+	text-transform: capitalize;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 ul {
-   list-style-type: none;
+	list-style-type: none;
 }
 
 button {
-   background-color: rgb(255, 255, 255);
-   outline: none;
-   border: none;
-   padding: 0.5rem 1rem;
-   margin-left: 0.4rem;
-   border-radius: $radius;
-   cursor: pointer;
+	background-color: rgb(255, 255, 255);
+	outline: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	margin-left: 0.4rem;
+	border-radius: $radius;
+	cursor: pointer;
 
-   &:hover{
-      background-color: rgb(223, 202, 202);
-   }
+	&:hover {
+		background-color: rgb(223, 202, 202);
+	}
 }
 
 footer {
-   background-color: $navigation-bar-clr;
-   color: $nav-text-clr;
-   padding: 2rem 1rem;
-   position: relative;
-   top: 3.87vh;
+	background-color: $navigation-bar-clr;
+	color: $nav-text-clr;
+	padding: 2rem 1rem;
+	position: relative;
+	top: 3.87vh;
 
-   p {
-      max-width: 60%;
-      margin: auto;
-      text-align: center;
-   }
+	p {
+		max-width: 60%;
+		margin: auto;
+		text-align: center;
+	}
 }
